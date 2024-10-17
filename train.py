@@ -9,8 +9,13 @@ y_train = np.genfromtxt("data/train_labels.csv")
 X_test = np.genfromtxt("data/test_features.csv")
 y_test = np.genfromtxt("data/test_labels.csv")
 
+#feature enginenring
+#
+##
+
 # Fit a model
-depth = 2
+depth = 10
+
 clf = RandomForestClassifier(max_depth=depth)
 clf.fit(X_train, y_train)
 
